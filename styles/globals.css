@@ -1,26 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+
+:root {
+  /* colors */
+  --dark-grey: hsl(248, 10%, 15%);
+  --grey: hsl(251, 9%, 53%);
+  --light-grey: hsl(252, 11%, 91%);
+  --darker-grey: hsl(248, 15%, 11%);
+  --pale-green: hsl(127, 100%, 82%);
+  --pale-red: hsl(0, 91%, 63%);
+  --pale-orange: hsl(13, 95%, 66%);
+  --pale-amber: hsl(42, 91%, 68%);
+  /* font sises */
+  --text-base: 18px;
+  --text-m: 24px;
+  --text-l: 32px;
+  /* line heights */
+  --line-base: 23px;
+  --line-m: 31px;
+  --line-l: 43px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-size: var(--text-base);
+  line-height: var(--line-base);
+  background-color: var(--darker-grey);
 }
 
 * {
   box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }

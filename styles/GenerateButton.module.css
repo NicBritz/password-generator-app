@@ -1,0 +1,21 @@
+.button {
+  background-color: var(--pale-green);
+  height: 65px;
+  width: 100%;
+  border: 2px solid var(--pale-green);
+  font-size: var(--text-base);
+  line-height: var(--line-base);
+  color: var(--darker-grey);
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--dark-grey);
+  color: var(--pale-green);
+  fill: var(--pale-green);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}

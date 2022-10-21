@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  gap: 16px;
+  padding: 16px 0;
+}
+.checkboxContainer {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 44px;
+  font-size: 16px;
+  color: var(--light-grey);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--darker-grey);
+  border: 2px solid var(--light-grey);
+  display: grid;
+  place-content: center;
+}
+
+/* When the checkbox is checked */
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: var(--pale-green);
+  border: 2px solid var(--pale-green);
+}
+
+/* hide the checkmark when not checked */
+.checkmark > svg {
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkmark > svg {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .checkboxContainer {
+    font-size: var(--text-base);
+    line-height: var(--line-base);
+  }
+}
