@@ -31,7 +31,11 @@ const Strength = ({ strength }) => {
     <div className={styles.container}>
       <h3 className={styles.title}>STRENGTH</h3>
       <div className={styles.indicatorContainer}>
-        <h4 className={styles.strengthText}>{currentStrength}</h4>
+        {currentStrength ? (
+          <h4 className={styles.strengthText}>{currentStrength}</h4>
+        ) : (
+          <p>&nbsp;</p>
+        )}
         <div className={`${styles.indicator} ${indicator}`}></div>
         <div
           className={`${styles.indicator} ${

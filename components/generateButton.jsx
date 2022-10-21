@@ -2,7 +2,11 @@ import styles from "../styles/GenerateButton.module.css";
 
 const GenerateButton = ({ generatePassword }) => {
   return (
-    <button className={styles.button} onClick={generatePassword}>
+    <button
+      className={styles.button}
+      onClick={generatePassword}
+      aria-label="generate button"
+    >
       GENERATE{" "}
       <span>
         <svg

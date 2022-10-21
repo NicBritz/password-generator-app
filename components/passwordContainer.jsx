@@ -20,9 +20,13 @@ const PasswordContainer = ({ password }) => {
       >
         {password}
       </h2>
-      <h3 className={styles.copiedTxt}>{copied && "copied"}</h3>
+      {copied && <h3 className={styles.copiedTxt}> copied</h3>}
       <div className={styles.copyBtnContainer}>
-        <button className={styles.copyBtn} onClick={copyToClipboard}></button>
+        <button
+          className={styles.copyBtn}
+          onClick={copyToClipboard}
+          aria-label="copy button"
+        ></button>
       </div>
     </div>
   );

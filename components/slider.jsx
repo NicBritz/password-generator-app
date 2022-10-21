@@ -14,6 +14,7 @@ const Slider = ({ updateLength, length }) => {
         max="20"
         value={length}
         onChange={(e) => updateLength(e.target.value)}
+        aria-label="password length slider"
       />
     </div>
   );
