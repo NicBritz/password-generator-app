@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/footer";
 import PasswordGenerator from "../components/passwordGenerator";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Password Generator App</title>
         <meta
@@ -21,8 +22,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <PasswordGenerator />
+        <div className={styles.container}>
+          <PasswordGenerator />
+          <Footer />
+        </div>
       </main>
-    </div>
+    </>
   );
 }

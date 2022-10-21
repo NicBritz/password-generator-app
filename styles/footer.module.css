@@ -1,0 +1,10 @@
+.content {
+  font-size: var(--text-base);
+  color: var(--grey);
+  margin: 0 16px;
+}
+
+.content a {
+  color: var(--pale-green);
+  margin-left: 5px;
+}
